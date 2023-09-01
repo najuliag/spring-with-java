@@ -1,10 +1,4 @@
-package com.example.demo.Math;
-
-import com.example.demo.Converters.NumberConverter;
-import com.example.demo.Exceptions.UnsupportedMathOperationException;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+package com.example.demo.Calculator.Math;
 
 public class SimpleMath {
 
