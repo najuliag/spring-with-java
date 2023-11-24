@@ -1,13 +1,12 @@
-package com.example.demo.data.vo.v1;
+package com.example.demo.data.vo.v2;
 
-
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.Objects;
 
 
-public class PersonVO implements Serializable {
+public class PersonVOV2 implements Serializable {
 
     private static final long serialVersion = 1L;
 
@@ -20,21 +19,22 @@ public class PersonVO implements Serializable {
     private String address;
 
     private String gender;
+    private Date birthday;
 
-    public PersonVO() {
+    public PersonVOV2() {
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        PersonVO person = (PersonVO) o;
-        return Objects.equals(id, person.id) && Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && Objects.equals(address, person.address) && Objects.equals(gender, person.gender);
+        PersonVOV2 that = (PersonVOV2) o;
+        return Objects.equals(id, that.id) && Objects.equals(firstName, that.firstName) && Objects.equals(lastName, that.lastName) && Objects.equals(address, that.address) && Objects.equals(gender, that.gender) && Objects.equals(birthday, that.birthday);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, address, gender);
+        return Objects.hash(id, firstName, lastName, address, gender, birthday);
     }
 
     public Long getId() {
@@ -75,5 +75,13 @@ public class PersonVO implements Serializable {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 }
