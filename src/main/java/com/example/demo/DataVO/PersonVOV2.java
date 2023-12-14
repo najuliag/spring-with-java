@@ -1,4 +1,4 @@
-package com.example.demo.data.vo.v2;
+package com.example.demo.DataVO;
 
 
 import java.io.Serializable;

@@ -1,7 +1,7 @@
 package com.example.demo.Mapper;
 
 import com.example.demo.Model.Person;
-import com.example.demo.data.vo.v2.PersonVOV2;
+import com.example.demo.DataVO.PersonVOV2;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;

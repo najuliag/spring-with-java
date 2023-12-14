@@ -3,7 +3,7 @@ package com.example.demo.unittest.mapper.mocks;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.demo.data.vo.v1.PersonVO;
+import com.example.demo.DataVO.PersonVO;
 import com.example.demo.Model.Person;
 
 public class MockPerson {
@@ -48,7 +48,7 @@ public class MockPerson {
         person.setAddress("Addres Test" + number);
         person.setFirstName("First Name Test" + number);
         person.setGender(((number % 2)==0) ? "Male" : "Female");
-        person.setId(number.longValue());
+        person.setKey(number.longValue());
         person.setLastName("Last Name Test" + number);
         return person;
     }
