@@ -6,7 +6,7 @@ import com.example.demo.Exceptions.ResourceNotFound;
 import com.example.demo.Mapper.DozerMapper;
 import com.example.demo.Mapper.PersonMapper;
 import com.example.demo.Model.Person;
-import com.example.demo.Repositorys.PersonRepository;
+import com.example.demo.Repositories.PersonRepository;
 import com.example.demo.DataVO.PersonVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -54,13 +54,6 @@ public class PersonService {
         return vo;
 
     }
-//    public PersonVOV2 createV2(PersonVOV2 person){
-//        logger.info("Creating one person!");
-//        var entity = mapper.convertVOToEntity(person);
-//        var vo = mapper.convertEntityToVO(repository.save(entity));
-//        return vo;
-//
-//    }
 
     public PersonVO update(PersonVO person){
 

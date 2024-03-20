@@ -19,7 +19,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.example.demo.DataVO.PersonVO;
 import com.example.demo.Model.Person;
-import com.example.demo.Repositorys.PersonRepository;
+import com.example.demo.Repositories.PersonRepository;
 import com.example.demo.Services.PersonService;
 import com.example.demo.unittest.mapper.mocks.MockPerson;
 

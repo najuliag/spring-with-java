@@ -1,7 +1,5 @@
 package com.example.demo.Exceptions;
 
-import com.fasterxml.jackson.databind.DatabindException;
-
 import java.io.Serializable;
 import java.util.Date;
 
